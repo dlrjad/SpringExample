@@ -14,7 +14,7 @@ public class OperationService {
         return operation.resta(x, y);
     }
     
-    public void setOperarion(IOperations operation){
+    public void setOperation(IOperations operation){
         this.operation = operation;
     }
 

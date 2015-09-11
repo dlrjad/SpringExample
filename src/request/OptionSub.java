@@ -6,7 +6,7 @@ public class OptionSub implements IRequests{
 
     @Override
     public void requestResult() {
-        System.out.println("Resultado de la resta: ");
+        System.out.print("Resultado de la resta: ");
     }
     
 }

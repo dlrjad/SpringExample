@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="optionAdd" class="request.OptionAdd"></bean>
+	<bean id="addService" class="services.RequestService">
+		<property name="option">
+			<ref local="optionAdd"/>
+		</property>
+	</bean>
+        
+        <bean id="operationAdd" class="response.Operations"></bean>
+	<bean id="operationAddService" class="services.OperationService">
+		<property name="operation">
+			<ref local="operationAdd"/>
+		</property>
+	</bean>
+	
+</beans>

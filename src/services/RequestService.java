@@ -10,7 +10,7 @@ public class RequestService {
         request.requestResult();
     }
     
-    public void setRequest(IRequests request){
+    public void setOption(IRequests request){
         this.request = request;
     }
     
