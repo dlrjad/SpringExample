@@ -16,5 +16,19 @@
 			<ref local="operationAdd"/>
 		</property>
 	</bean>
-	
+        
+        <bean id="optionSub" class="request.OptionSub"></bean>
+	<bean id="subService" class="services.RequestService">
+		<property name="option">
+			<ref local="optionSub"/>
+		</property>
+	</bean>
+        
+        <bean id="operationSub" class="response.Operations"></bean>
+	<bean id="operationSubService" class="services.OperationService">
+		<property name="operation">
+			<ref local="operationSub"/>
+		</property>
+	</bean>
+        
 </beans>

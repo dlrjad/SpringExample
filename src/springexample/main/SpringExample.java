@@ -23,6 +23,13 @@ public class SpringExample {
         int z = operationService.operationAdd(x, y);
         System.out.println(z);
         
+        requestService = (RequestService) context.getBean("subService");
+        requestService.requestOption();
+        
+        operationService = (OperationService) context.getBean("operationSubService");
+        z = operationService.operationSub(x, y);
+        System.out.println(z);
+        
     }
     
 }
